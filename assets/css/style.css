@@ -1,5 +1,198 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* Cabeçalho */
+
+.header__conteudo {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.header__img {
+  width: 150px;
+}
+
+.header__lista {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.header__link {
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: black;
+}
+
+/* Seção Capa */
+
+.capa {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg-estacao.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 3.75rem 1.25rem;
+}
+
+.capa::before {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.capa__conteudo {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 3.75rem 1.25rem;
+  top: 0;
+  left: 0;
+}
+
+.capa__titulo {
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.capa__subtitulo {
+  font-size: 2.1875rem;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+}
+
+/* Seção Sobre */
+
+.sobre__article,
+.sobre__img {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sobre__titulo {
+  padding: 1.875rem 0;
+  font-size: 1.5rem;
+}
+
+.sobre__article p {
+  text-align: justify;
+  margin: 15px 0;
+  line-height: 2rem;
+}
+
+.sobre__article p::first-letter {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Seção Ponto Turístico */
+
+.ponto-turistico {
+  background-color: #e9e9e9;
+}
+
+.ponto-turistico__titulo {
+  font-size: 1.5rem;
+  padding: 1.875rem 0;
+}
+
+.ponto-turistico__conteudo,
+.ponto-turistico__img {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ponto-turistico__conteudo p {
+  text-align: start;
+  font-size: 1.125rem;
+  margin: 0.625rem 0;
+}
+
+.ponto-turistico ul {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.25rem;
+}
+
+.ponto-turistico__item {
+  text-align: start;
+  line-height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.ponto-turistico__item::before {
+  content: '';
+  background-image: url(../img/seta.png);
+  width: 20px;
+  height: 20px;
+  margin: 0 6px 0 0;
+}
+
+/* Galeraia de Fotos */
+
+.galeria__imagem {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto 70px auto;
+}
+
+.galeria__titulo {
+  text-align: center;
+  width: 100%;
+  max-width: 1024px;
+  padding: 2.5rem 0;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+.galeria p {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 1.25rem;
+}
+
+.galeria__img {
+  width: calc((100% / 3) - 3px);
+  opacity: 0.6;
+}
+
+.galeria__img:hover {
+  opacity: 1;
+}
+
+/* Seção Rodapé */
+
+.rodape {
+  width: 100%;
+  padding: 1.25rem 0;
+  text-align: center;
+  background-color: #f5c002;
+  font-size: 1.125rem;
+}
+
+.rodape__nome {
+  color: royalblue;
 }

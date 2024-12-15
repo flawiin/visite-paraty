@@ -9,22 +9,24 @@
 
   <body>
     <header class="header">
-      <a class="header__logo" href="">
-        <img class="header__img" src="./assets/img/logo.png" alt="Logo da Cidade de Paraty" />
-      </a>
-      <nav class="header__nav">
-        <ul class="header__lista">
-          <li class="header__item">
-            <a class="header__link" href="#">Sobre</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Pontos turísticos</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Galeria</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__conteudo">
+        <a class="header__logo" href="">
+          <img class="header__img" src="./assets/img/logo.png" alt="Logo da Cidade de Paraty" />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__lista">
+            <li class="header__item">
+              <a class="header__link" href="#">Sobre</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Pontos turísticos</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Galeria</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -78,49 +80,53 @@
       </section>
 
       <section class="ponto-turistico">
-        <h3 class="ponto-turistico__titulo">Pontos Turísticos</h3>
-        <img class="ponto-turistico__img" src="/assets/img/Casa-da-Cultura.jpg" alt="Casarão" />
-        <p>Conheça alguns dos pontos mais atrativos de paraty para você visitar:</p>
-        <ul>
-          <li class="ponto-turistico__item">Câmara Municipal</li>
-          <li class="ponto-turistico__item">Caminho do Ouro</li>
-          <li class="ponto-turistico__item">Capela da Generosa</li>
-          <li class="ponto-turistico__item">Casa da Cultura</li>
-          <li class="ponto-turistico__item">Chafariz da Pedreira</li>
-        </ul>
+        <div class="ponto-turistico__conteudo">
+          <h3 class="ponto-turistico__titulo">Pontos Turísticos</h3>
+          <img class="ponto-turistico__img" src="./assets/img/Casa-da-Cultura.jpg" alt="Casarão" />
+          <p>Conheça alguns dos pontos mais atrativos de paraty para você visitar:</p>
+          <ul>
+            <li class="ponto-turistico__item">Câmara Municipal</li>
+            <li class="ponto-turistico__item">Caminho do Ouro</li>
+            <li class="ponto-turistico__item">Capela da Generosa</li>
+            <li class="ponto-turistico__item">Casa da Cultura</li>
+            <li class="ponto-turistico__item">Chafariz da Pedreira</li>
+          </ul>
+        </div>
       </section>
 
       <section class="galeria">
         <h2 class="galeria__titulo">Galeria de Fotos</h2>
         <p>Confira algumas belíssimas imagens da cidade na galeria abaixo:</p>
-        <img
-          src="./assets/img/Caminho-do-Ouro.jpg"
-          alt="Trecho empedrado do histórico Caminho do Ouro, rodeado por vegetação tropical em Paraty"
-          class="galeria__img" />
-        <img
-          src="./assets/img/Ilha-do-Cedro.jpg"
-          alt="Vista da Ilha do Cedro, com sua vegetação abundante e águas serenas no litoral de Paraty"
-          class="galeria__img" />
-        <img
-          src="./assets/img/Lagoa-Azul.jpg"
-          alt="Lagoa Azul com águas claras e calmas, cercada por mata atlântica, próximo a Paraty"
-          class="galeria__img" />
-        <img
-          src="./assets/img/Cachoeira.jpg"
-          alt="Cachoeira cercada por densa vegetação, formando um pequeno poço natural em meio à natureza de Paraty"
-          class="galeria__img" />
-        <img
-          src="./assets/img/Cais.jpg"
-          alt="Cais de Paraty, com barcos de pesca coloridos atracados e vista das montanhas ao fundo"
-          class="galeria__img" />
-        <img
-          src="./assets/img/Poco-Ingleses.jpg"
-          alt="Poço dos Ingleses, uma piscina natural entre pedras e mata verde, típica das paisagens de Paraty"
-          class="galeria__img" />
+        <div class="galeria__imagem">
+          <img
+            src="./assets/img/Caminho-do-Ouro.jpg"
+            alt="Trecho empedrado do histórico Caminho do Ouro, rodeado por vegetação tropical em Paraty"
+            class="galeria__img" />
+          <img
+            src="./assets/img/Ilha-do-Cedro.jpg"
+            alt="Vista da Ilha do Cedro, com sua vegetação abundante e águas serenas no litoral de Paraty"
+            class="galeria__img" />
+          <img
+            src="./assets/img/Lagoa-Azul.jpg"
+            alt="Lagoa Azul com águas claras e calmas, cercada por mata atlântica, próximo a Paraty"
+            class="galeria__img" />
+          <img
+            src="./assets/img/Cachoeira.jpg"
+            alt="Cachoeira cercada por densa vegetação, formando um pequeno poço natural em meio à natureza de Paraty"
+            class="galeria__img" />
+          <img
+            src="./assets/img/Cais.jpg"
+            alt="Cais de Paraty, com barcos de pesca coloridos atracados e vista das montanhas ao fundo"
+            class="galeria__img" />
+          <img
+            src="./assets/img/Poco-Ingleses.jpg"
+            alt="Poço dos Ingleses, uma piscina natural entre pedras e mata verde, típica das paisagens de Paraty"
+            class="galeria__img" />
+        </div>
       </section>
     </main>
-    <footer>
-      <p>Desenvolvido por: <span>Flávio Pimentel</span></p>
+    <footer class="rodape">
+      <p>&copy; Desenvolvido por: <span class="rodape__nome">Flávio Pimentel</span></p>
     </footer>
   </body>
 </html>
