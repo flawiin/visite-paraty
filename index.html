@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Prefeitura de Paraty</title>
+    <title>Visite Paraty</title>
   </head>
 
   <body>
@@ -13,7 +13,12 @@
         <a class="header__logo" href="">
           <img class="header__img" src="./assets/img/logo.png" alt="Logo da Cidade de Paraty" />
         </a>
-        <nav class="header__nav">
+        <button class="header__menu-hamburger" id="menuBtn" aria-label="Menu">
+          <span class="header__menu-hamburger__linha"></span>
+          <span class="header__menu-hamburger__linha"></span>
+          <span class="header__menu-hamburger__linha"></span>
+        </button>
+        <nav class="header__nav" id="nav">
           <ul class="header__lista">
             <li class="header__item">
               <a class="header__link" href="#sobre">Sobre</a>
@@ -126,7 +131,12 @@
       </section>
     </main>
     <footer class="rodape">
-      <p>&copy; Desenvolvido por: <span class="rodape__nome">Flávio Pimentel</span></p>
+      <p>
+        &copy; Desenvolvido por:
+        <span class="rodape__nome">Flávio Pimentel</span>
+      </p>
     </footer>
+    <div class="visitante-paraty"></div>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
